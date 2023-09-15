@@ -1,8 +1,15 @@
 # vsEcom-StoreFront-Angular
 
+StoreFront of vsEcom 
+
+https://www.vsecommerce.com/ \
+Documentation : https://help.vsecommerce.com/ \
+API Documentation (Developer Doc) : https://help.vsecommerce.com/api/#introduction \
+User Doc : https://help.vsecommerce.com/docs/overview/introduction \
+Our Organization : https://www.vsonlineservices.com 
 
 
-#License
+# License
 Copyright (c) VS Online Services Pvt Ltd. All rights reserved.
 
 Licensed under the VS Online Services Open Software License (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
