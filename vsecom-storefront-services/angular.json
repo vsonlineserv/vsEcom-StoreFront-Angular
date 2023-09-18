@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "vs-ecom-storefront-services": {
+      "projectType": "library",
+      "root": "projects/vs-ecom-storefront-services",
+      "sourceRoot": "projects/vs-ecom-storefront-services/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/vs-ecom-storefront-services/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/vs-ecom-storefront-services/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/vs-ecom-storefront-services/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/vs-ecom-storefront-services/src/test.ts",
+            "tsConfig": "projects/vs-ecom-storefront-services/tsconfig.spec.json",
+            "karmaConfig": "projects/vs-ecom-storefront-services/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "611be703-8870-42f0-b8af-1206bf50ee34"
+  }
+}
